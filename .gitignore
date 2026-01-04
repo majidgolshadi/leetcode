@@ -1,0 +1,51 @@
+# .gitignore for Go projects + Visual Studio Code
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Output directories
+bin/
+build/
+out/
+
+# Package object files and archives
+*.a
+*.o
+
+# Go build/linker cache - usually global, but sometimes present in repo roots
+pkg/
+
+# Dependency directories (uncomment if you DON'T commit vendor/)
+# vendor/
+
+# Go editor/temp files
+*.coverprofile
+coverage.out
+
+# Debug / test artifacts
+debug/
+debug.log
+dlv.*
+*.prof
+
+# VS Code settings / workspace
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
