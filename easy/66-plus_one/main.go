@@ -39,6 +39,29 @@ func main() {
 
 }
 
+func plusOneVersionOne(digits []int) []int {
+	lastIndex := len(digits) - 1
+	carry := 0
+
+	digits[lastIndex]++
+
+	for i := lastIndex; i >= 0; i-- {
+		digits[i] += carry
+		carry = 0
+
+		if digits[i] > 9 {
+			digits[i] = 0
+			carry = 1
+		}
+	}
+
+	if carry == 1 {
+		digits = append([]int{1}, digits...)
+	}
+
+	return digits
+}
+
 func plusOne(digits []int) []int {
 	for i := len(digits) - 1; i >= 0; i-- {
 		if digits[i] < 9 {
