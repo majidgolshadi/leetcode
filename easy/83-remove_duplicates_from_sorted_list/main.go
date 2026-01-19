@@ -33,14 +33,14 @@ func main() {
 		input          *ListNode
 		expectedOutput *ListNode
 	}{
-		// {
-		// 	input:          createList([]int{}),
-		// 	expectedOutput: createList([]int{}),
-		// },
-		// {
-		// 	input:          createList([]int{1, 1, 2}),
-		// 	expectedOutput: createList([]int{1, 2}),
-		// },
+		{
+			input:          createList([]int{}),
+			expectedOutput: createList([]int{}),
+		},
+		{
+			input:          createList([]int{1, 1, 2}),
+			expectedOutput: createList([]int{1, 2}),
+		},
 		{
 			input:          createList([]int{1,1,2,3,3}),
 			expectedOutput: createList([]int{1,2,3}),
