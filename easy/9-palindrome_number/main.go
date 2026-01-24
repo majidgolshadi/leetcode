@@ -32,7 +32,7 @@ func main() {
 		output := isPalindrome(test.input)
 
 		if test.expectedOutput != output {
-			log.Fatalf("input %v, expected %t, output is %t", test.expectedOutput, output)
+			log.Fatalf("input %v, expected %t, output is %t", test.input, test.expectedOutput, output)
 		}
 	}
 
