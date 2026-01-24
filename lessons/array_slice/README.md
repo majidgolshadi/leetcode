@@ -36,6 +36,7 @@ When you append to a slice that is full (len == cap), Go allocates a new, larger
 This is a classic discussion point. If you load a large file into memory (e.g., a 100MB array) and return a small slice of it (e.g., data[:10]), the entire 100MB backing array remains in memory because the small slice holds a pointer to it. The Garbage Collector (GC) cannot reclaim the large array.
 
 * **Solution:** Copy the small chunk you need into a fresh slice so the massive backing array can be garbage collected.
+
 ```Go
 
     // Bad
