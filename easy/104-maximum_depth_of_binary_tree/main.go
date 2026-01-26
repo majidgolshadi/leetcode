@@ -69,8 +69,6 @@ func maxDepth(root *TreeNode) int {
 	return rightDepth + 1
 }
 
-
-
 func maxDepth_solution1(root *TreeNode) int {
 	if root == nil {
 		return 0
@@ -85,14 +83,14 @@ func depth(node *TreeNode, depthLevel int) int {
 	}
 
 	if node.Left == nil {
-		return depth(node.Right, depthLevel + 1)	
+		return depth(node.Right, depthLevel+1)
 	}
 
 	if node.Right == nil {
-		return depth(node.Left, depthLevel + 1)	
+		return depth(node.Left, depthLevel+1)
 	}
 
-	return maxInt(depth(node.Left, depthLevel + 1), depth(node.Right, depthLevel + 1))
+	return maxInt(depth(node.Left, depthLevel+1), depth(node.Right, depthLevel+1))
 }
 
 func maxInt(a, b int) int {
