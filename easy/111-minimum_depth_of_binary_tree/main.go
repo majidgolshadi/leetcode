@@ -10,46 +10,46 @@ func main() {
 		input          *TreeNode
 		expectedOutput int
 	}{
-		// {
-		// 	input:          nil,
-		// 	expectedOutput: 0,
-		// },
-		// {
-		// 	input: &TreeNode{
-		// 		Val: 3,
-		// 		Left: &TreeNode{
-		// 			Val: 9,
-		// 		},
-		// 		Right: &TreeNode{
-		// 			Val: 20,
-		// 			Left: &TreeNode{
-		// 				Val: 15,
-		// 			},
-		// 			Right: &TreeNode{
-		// 				Val: 7,
-		// 			},
-		// 		},
-		// 	},
-		// 	expectedOutput: 2,
-		// },
-		// {
-		// 	input: &TreeNode{
-		// 		Val: 2,
-		// 		Right: &TreeNode{
-		// 			Val: 3,
-		// 			Right: &TreeNode{
-		// 				Val: 4,
-		// 				Right: &TreeNode{
-		// 					Val: 5,
-		// 					Right: &TreeNode{
-		// 						Val: 6,
-		// 					},
-		// 				},
-		// 			},
-		// 		},
-		// 	},
-		// 	expectedOutput: 5,
-		// },
+		{
+			input:          nil,
+			expectedOutput: 0,
+		},
+		{
+			input: &TreeNode{
+				Val: 3,
+				Left: &TreeNode{
+					Val: 9,
+				},
+				Right: &TreeNode{
+					Val: 20,
+					Left: &TreeNode{
+						Val: 15,
+					},
+					Right: &TreeNode{
+						Val: 7,
+					},
+				},
+			},
+			expectedOutput: 2,
+		},
+		{
+			input: &TreeNode{
+				Val: 2,
+				Right: &TreeNode{
+					Val: 3,
+					Right: &TreeNode{
+						Val: 4,
+						Right: &TreeNode{
+							Val: 5,
+							Right: &TreeNode{
+								Val: 6,
+							},
+						},
+					},
+				},
+			},
+			expectedOutput: 5,
+		},
 		{
 			input: &TreeNode{
 				Val: 1,
